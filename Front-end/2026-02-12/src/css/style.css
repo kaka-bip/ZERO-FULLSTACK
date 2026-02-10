@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body {
+    background-color: #ACC7F5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar {
+    padding: 5px;
+    background-color: #11ADF5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    button {
+        margin-right: 5px;
+        padding: 0.5rem;
+        border-radius: 10px;
+        border: none;
+        background-color: #61cdff;
+    }
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+    h1{
+        font-size: 16px;
+    }
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+section {
+    border-radius: 10px;
+    bottom: 5px;
+    padding: 5px;
+    background-color: #fff;
+    margin: 5px;
+
+    hr {
+        border-radius: 20px;
+        border: none;
+        background-color: #000;
+        height: 5px;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+        border: none;
+        border-radius: 20px;
+        transition: transform 0.5s ease;
+        margin: 10px;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+
+    p {
+        text-align: justify;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    ul,
+    li {
+        margin: 20px;
+    }
+
+    .aviso-span{
+        color: hsl(46, 100%, 50%);
+        font-size: 15px;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    a{
+        text-decoration: none;
+        color: #000dff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+#on {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: center;
+
+    h2,
+    hr {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    a {
+        grid-column: 2;
+        grid-row: 3 / span 2;
+        /* Alinha a imagem ao lado dos dois parágrafos */
+
+        img {
+            max-width: 400px;
+            /* Ajuste conforme necessário */
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito Scale com Hover usando o seletor de pai (&) */
+        &:hover img {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.footer-span{
+    color: #000085;
+    font-weight: 700;
+    font-size: 15px;
+}

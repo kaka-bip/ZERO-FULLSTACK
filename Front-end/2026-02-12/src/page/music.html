@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Pudim Amassado</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #on {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            align-items: center;
+            max-width: 850px;
+            background: #1e1e1e;
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        #on h2, #on hr {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        #on h2 {
+            color: #ffcc00;
+            margin: 0;
+        }
+
+        #on hr {
+            width: 100%;
+            border: 0;
+            border-top: 1px solid #333;
+            margin: 20px 0;
+        }
+
+        #on p {
+            grid-column: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        #on a {
+            grid-column: 2;
+            grid-row: 3 / span 3; /* Ajustado para alinhar com os textos e o player */
+        }
+
+        #on a img {
+            max-width: 350px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        #on a:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Estilização do Player de Áudio */
+        audio {
+            grid-column: 1;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="on">
+        <h2>Sobre o Evento</h2>
+        <hr>
+        
+        <p>Venha participar do nosso evento de música com vários cantores famosos!</p>
+        <p>Com acesso ilimitado até o dia 12/03/2026, venha já comprar seu ingresso!</p>
+        
+        <audio autoplay loop controls>
+            <source src="src/audio/pudim-amassado.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        
+        <a href="#">
+            <img src="src/img/img-evento.png" alt="banner do evento de música">
+        </a>
+    </section>
+
+</body>
+</html>
