@@ -24,6 +24,11 @@ body {
         border-radius: 10px;
         border: none;
         background-color: #61cdff;
+
+    &:hover{
+        background-color: #86d1f3;
+        cursor: pointer;
+    }
     }
 
 a{
@@ -106,6 +111,58 @@ section {
         color: #000dff;
         font-size: 16px;
         font-weight: 700;
+    }
+}
+
+.form{
+    margin: 5px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    input{
+        border: 2px solid #373737;
+        border-radius: 10px;
+        margin: 2px;
+        padding: 5px;
+        color: #000;
+
+        &::placeholder{
+            font-weight: 700;
+            color: #000;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+    }
+
+    label{
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    div{
+        padding: 3px;
+        margin: 3px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        border: none;
+        border-radius: 20px;
+        background-color: #11ADF5;
+        color: #fff;
+        padding: 5px;
     }
 }
 

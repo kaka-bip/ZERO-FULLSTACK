@@ -18,8 +18,7 @@
           <li><a href="#location">Local</a></li>
         </ul>
         <a href="../2026-02-12/src/page/music.html" target="_blank"
-          ><button type="button">Música</button></a
-        >
+          ><button type="button">Música</button></a>
       </nav>
     </header>
 
@@ -68,6 +67,23 @@
             >Telefone do Evento (75)99189-0654</a
           >
         </p>
+      </section>
+
+      <section class="form">
+        <form>
+            <h2>Formulario</h2>
+            <div>
+              <label for="">Seu Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+            </div>
+
+          <div>
+            <label for="">Seu Telefone</label>
+          <input type="tel" name="nome" id="telefone" placeholder="(75) 9999-999" required minlength="8" pattern="[0-9] {10,11}">
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
       </section>
 
       <footer>
