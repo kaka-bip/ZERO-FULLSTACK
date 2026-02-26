@@ -1,86 +1,80 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.5s ease;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s ease;
 }
 
-body {
-    display: flex;
+:root{
+    --cor-um: #dcdcdc;
+    --cor-dois: #dddc;
+    --cor-tres: #86e5fa68;
+
+}
+
+body{
     height: 100vh;
     justify-content: center;
     align-items: center;
+    display: inline-flex;
 }
 
-.container {
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: 2px;
+.container{
+    background-color: var(--cor-um);
+    border-radius: 5px;
+    border: 1px solid var(--cor-dois);
+    margin: 5px;
     padding: 10px;
-    width: 500px;
-    height: 450px;
 
     p{
-        font: 700;
-        font-size: 16px;   
-        width: 400px;
-        margin: 0 auto;
+        margin: 5px;
+        padding: 5px;
         text-align: justify;
     }
-    h2{
-        font-size: 20px;
+
+    h1,h2{
+        text-align: center;
+        font-size: 20px ;
     }
 }
 
-.hover-dica:hover {
-    .dica {
-        opacity: 1;
-        transition: all 0.8s ease;
-    }
-
-    .hover {
-        opacity: 1;
-        transition: all 0.8s ease;
-    }
-}
-
-
-.hover {
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    color: #a80202;
-}
-
-.dica {
+.hover-dica{
     opacity: 0;
-
-    margin: 20px;
-    border: 2px solid #00b3ff;
-    border-radius: 20px;
+    display: flex;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 250px;
     height: 150px;
-    background-color: rgba(0, 255, 255, 0.159);
+    background-color: var(--cor-tres);
+    border-radius: 5px;
 
-    p {
-        padding: 2px;
-        font-size: 17px;
-        font-weight: 600;
-        font-style: unset;
-        height: 200px;
-        width: 200px;
-        margin: 0 auto;
-
+    p{
+        font-size: 16px;
+        font-weight: 700;
+        transition: all ease 0.7s ;
     }
 
     a{
-        color: #4400ff;
         text-decoration: none;
+        color: #3806eb;
+   }
+
+       &.hover-dica:hover{
+        opacity: 1;
+    }
+}
+
+.border-left{
+    opacity: 1;
+    border-left: 1px solid blue;
+    transition: ease 0.9s;
+
+    &:hover{
+        border-left: 5px solid blue;
     }
 
-    h1 {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
 }
