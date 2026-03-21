@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 10px;
+}
+
+.pista{
+    position: relative;
+
+    margin: 40px 0;
+    height: 100px;
+    background-color: #0c0c0c;
+}
+
+.carro{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: calc(0% + 25px);
+    z-index: 1;
+
+    transform: translateY(-50%);
+
+    animation-name: tom-e-jerry;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    width: 100px;
+    height: 50px;
+    background-color: #f21f;
+}
+
+.pista .carro{
+    transition: 1s;
+    left: calc(100% - 125px);
+}
+/* 
+duas formas 
+
+nominal 
+*/
+@keyframes tom-e-jerry{
+    from{
+        left: calc(0% + 25px)
+    }
+    to{
+        left: calc(100% - 125px);
+    }
+}
